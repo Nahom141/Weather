@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <i class="fa-solid fa-location-dot" id="loc"></i>
+        <input type="text" name="" id="search" placeholder="search city" />
+        <i class="fa-solid fa-magnifying-glass" id="magnify"></i>
+      </div>
+
+      <div class="weather">
+        <div class="weather-info">
+          <div class="city">
+            <h2>City</h2>
+          </div>
+          <div class="degree">
+            <h1>0°C</h1>
+          </div>
+        </div>
+      </div>
+      <div class="icon">
+        <img
+          class="weather-icon"
+          src="/img/wathers/cloud_13555346.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+
+      <div class="state">
+        <h4>windy</h4>
+      </div>
+      <div class="conditions">
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <p>Wind</p>
+        </div>
+        <div id="err"></div>
+
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <p>humidity</p>
+        </div>
+      </div>
+      <div class="condition-value">
+        <div class="wind-value">0 km/h</div>
+        <div class="humidity-value">0%</div>
+      </div>
+
+      <!-- ///////////// -->
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/62377aea97.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
